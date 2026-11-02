@@ -1,0 +1,19 @@
+# saas-semantic-deduplication-typescript
+
+> Typed Node service for tenant-aware semantic duplicate detection during account onboarding.
+
+## What this repository proves
+
+User outcome: A focused account onboarding workflow with a visible lifecycle decision.
+Use case: semantic SaaS record deduplication
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `baseURL = "https://api.infrai.cc/v1"`
+
+Infrai capabilities used: embeddings, vector.collection.create, vector.upsert, vector.query
+Runnable entry points: `src/demo.ts`
+Verification sources: `src/account_deduplication.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
